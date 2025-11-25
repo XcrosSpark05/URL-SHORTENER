@@ -2,10 +2,11 @@
   "name": "url-shortner-api",
   "version": "1.0.0",
   "description": "This project contains url shortner apis ",
-  "main": "server.js",
+  "main": "dist/server.js",
   "scripts": {
-    "build": "npx tsc", 
-    "start": "node ./dist/server.js",
+    "build": "npx tsc",
+    "start": "npx tcs && node ./dist/server.js",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Prathamesh Karbele",
@@ -23,6 +24,7 @@
     "@types/mongoose": "^5.11.96",
     "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
